@@ -5,26 +5,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina Arrecife</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
-    <link rel="stylesheet" href="style.css">
+    <!-- Fuente texto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <!-- Fuente iconos google font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- Stilo css -->
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     <section id="header">
-        <a href="#"><img src="img/logo.jpg" class="logo" alt="100" width="100"></a>
 
-        <div>
+        <div class="container">
+            <a href="#"><img src="img/logo.jpg" class="logo" alt="100" width="100"></a>
             <ul id="navbar">
                 <li><a class="activate" href="index.html">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="Blog.html">Blog</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Shop</a></li>
-                <li><a href="cart.html"></a><i class="fa-solid fa-badge-dollar"></i></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="cart.html"><span class="material-symbols-outlined">shopping_cart_checkout </span></span></a></li>
             </ul>
         </div>
     </section>
 
-    
+    <section id="hero">
+        <h1>Los mejores vestidos de baño</h1>
+        <button>Descubrir</button>
+    </section>
+    <section id="About">
+        <div class="container">
+            <div class="img-container"></div>
+            <h2>Emprendimiento</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit ea laudantium vero quae a assumenda expedita cumque nam non, consequatur voluptatibus repudiandae, illum debitis dicta exercitationem fugit ex eligendi neque?</p>
+        </div>
+    </section>
+
+    <section id="shop">
+        <div class="container">
+            <h2>Nuestros productos</h2>
+            <div class="carta">
+                <h3>Producto1</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <button>comprar</button>
+            </div>
+            <div class="carta">
+                <h3>Producto2</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <button>comprar</button>
+            </div>
+            <div class="carta">
+                <h3>Producto3</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <button>comprar</button>
+            </div>
+        </div>
+    </section>    
+
+    <section id="Contact">
+        <div class="container">
+            <ul>
+                <li>Numero</li>
+                <li>email</li>
+                <li>Direccion</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="Blog">
+        <h2>Es una empresa de Pereira</h2>
+        <button>Inicia</button>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Copy right Arrecife </p>
+        </div>
+    </footer>
 </body>
     
 </html>
