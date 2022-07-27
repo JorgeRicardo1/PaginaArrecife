@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0;
 }
@@ -31,50 +35,45 @@ button:hover{
 }
 
 /* Header */
-#header {
+header {
     
     display:  flex;
     flex-direction: column;
     align-items:  center;
-    justify-content: space-between;
-    padding: 20px 80px;
+    padding: 0px 80px;
     background: #e3e6f3;
     box-shadow:  0 5px 15px rgba( 0, 0 , 0, 0.3);
     font-family: 'Montserrat', sans-serif;
 }
 
-#header img{
+header img{
     margin:  0px;
     padding: 25px 30px;
 }
 
-#header .container{
+header .container{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 /* Estilo para el navbar */
-#navbar{
+header nav{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 25px;
 }
 
-#navbar li{
-    list-style: none;
-    padding: 25px;
-    position: relative;
-}
 
-#navbar li a {
+header a {
+    padding: 5px 12px;
     text-decoration: none;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: bold;
     color:  #1a1a1a;
 }
-#navbar li a:hover{
+header a:hover{
     color: #088178;
 }
 
@@ -100,4 +99,170 @@ button:hover{
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+    background-blend-mode: hard-light;
+}
+
+/* Seccion about */
+#about{
+
+}
+
+#about .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+/* Seccuib shop */
+
+#shop {
+    background-color: #088178;;
+    color: antiquewhite;
+    text-align: center;
+}
+
+#shop .container{
+    padding: 100px 12px;
+    
+}
+
+#shop h2{
+    margin-top: 0;
+    
+}
+
+#shop p{
+    display: none;
+    
+}
+
+#shop .carta{
+    background-color: rgba(59, 59, 59, 0.5);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+    text-align: left;
+    background-blend-mode: hard-light;
+}
+
+.carta:first-child{
+    background-image: url(/img/producto1.PNG);
+    
+}
+
+.carta:nth-child(2){
+    background-image: url(/img/producto2.PNG);
+}
+
+.carta:nth-child(3){
+    background-image: url(/img/producto3.PNG);
+}
+
+#contact .container{
+     text-align: center;
+     padding: 200px 12px;
+}
+
+#contact li{
+    margin: 15px 0px;
+    font-weight: bold;
+}
+
+#blog{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #1a1a1a;
+    color: white;
+    height: 80vh;
+}
+
+#blog h2{
+    font-size: 9vw;
+}
+
+#blog button{
+    font-size: 5vw;
+}
+
+footer{
+    background-color: rgb(230, 230, 230);
+
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgba(100, 100, 100, 0.8);
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+@media (min-width: 720px){
+
+    header {
+        position: fixed;
+        width: 100%;
+    }
+   
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #about .container{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #about .texto{
+        text-align: initial;
+        width: 50%;
+        max-width: 600px;
+        padding: 0px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #about .img-container{
+        background-image: url(/img/img-container.PNG);
+        background-blend-mode: hard-light;
+        background-size: cover;
+        background-position: center center;
+        height: 400px;
+        width: 400px;
+    }
+    
+    #shop .productos{
+        display: flex;
+        justify-content: center;
+    }
+
+    #shop p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #shop .carta{
+        padding: 15px;
+    }
+
+
 }
