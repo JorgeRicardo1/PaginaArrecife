@@ -135,6 +135,12 @@ header a:hover{
     
 }
 
+#shop .productos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 #shop .carta{
     background-color: rgba(59, 59, 59, 0.5);
     background-repeat: no-repeat;
@@ -145,19 +151,30 @@ header a:hover{
     border-radius: 15px;
     text-align: left;
     background-blend-mode: hard-light;
-}
-
-.carta:first-child{
-    background-image: url(/img/producto1.PNG);
     
 }
-
-.carta:nth-child(2){
+.productos #izquierda {
+    grid-area: iz1;
+    background-image: url(/img/producto1.PNG);
+}
+.productos #centro {
+    grid-area: centro;
     background-image: url(/img/producto2.PNG);
 }
 
-.carta:nth-child(3){
+.productos #derecha {
+    grid-area: der1;
+    background-image: url(/img/producto2.2.PNG);
+}
+
+.productos #izquierda2 {
+    grid-area: iz2;
     background-image: url(/img/producto3.PNG);
+}
+
+.productos #derecha2 {
+    grid-area: der2;
+    background-image: url(/img/producto1.PNG);
 }
 
 #contact .container{
@@ -251,8 +268,13 @@ footer .container{
     }
     
     #shop .productos{
-        display: flex;
-        justify-content: center;
+        display: grid;
+        grid-template-areas: 
+        "iz1 iz1 centro centro centro der1 der1"
+        "iz1 iz1 centro centro centro der1 der1"
+        "iz2 iz2 centro centro centro der2 der2"
+        "iz2 iz2 centro centro centro der2 der2"
+        ;
     }
 
     #shop p{
